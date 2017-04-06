@@ -8,8 +8,8 @@ The provisioning step of this vagrant solution is: [https://github.com/oravirt/a
 
 Pre-requisites:
 
-- [https://www.vagrantup.com/](vagrant)
-- [https://www.virtualbox.org/wiki/Downloads](virtualbox)
+- [Vagrant](https://www.vagrantup.com/)
+- [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 
 
 Clone this repository:
