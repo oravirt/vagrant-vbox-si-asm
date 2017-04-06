@@ -6,6 +6,12 @@ The provisioning step of this vagrant solution is: [https://github.com/oravirt/a
 
 ### Getting started
 
+Pre-requisites:
+
+- [https://www.vagrantup.com/](vagrant)
+- [https://www.virtualbox.org/wiki/Downloads](virtualbox)
+
+
 Clone this repository:
 `git clone --recursive https://github.com/oravirt/vagrant-vbox-si-asm.git`
 
