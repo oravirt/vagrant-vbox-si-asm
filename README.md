@@ -48,7 +48,7 @@ For more detail on how the vagrant part of this project works, look at [this](ht
 
 ### Modifying the Oracle installation (Ansible style)
 
-If you want to install a different version of GI , edit the `extra-provision/ansible-oracle/group_vars/vbox-si-asm` file and change the parameter `oracle_install_option_gi` to either of:
+If you want to install a different version of GI , edit the `extra-provision/ansible-oracle/group_vars/vbox-si-asm` file and change the parameter `oracle_install_version_gi` to either of:
 
 * `12.2.0.1`
 * `12.1.0.2`
