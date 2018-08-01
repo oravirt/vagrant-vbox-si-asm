@@ -30,6 +30,11 @@ if ENV['recoveryfile_dest']
 else
  RECOVERYFILE_DEST = '+FRA'
 end
+if ENV['recoveryfile_dest_size']
+ RECOVERYFILE_DEST_SIZE = ENV['recoveryfile_dest_size']
+else
+ RECOVERYFILE_DEST_SIZE = '30G'
+end
 if ENV['dbname']
  DBNAME = ENV['dbname']
 else
@@ -157,8 +162,8 @@ state: "present",
 "init_parameters": [
   {"name":"db_create_file_dest", "value":"#{DATAFILE_DEST}","scope":"both","state":"present"},
   {"name":"db_create_online_log_dest_1","value":"#{RECOVERYFILE_DEST}","scope":"both","state":"present"},
-  {"name":"db_recovery_file_dest","value":"#{DATAFILE_DEST}","scope":"both","state":"present"},
-  {"name":"db_recovery_file_dest_size","value":"20G","scope":"both","state":"present"}
+  {"name":"db_recovery_file_dest","value":"#{RECOVERYFILE_DEST}","scope":"both","state":"present"},
+  {"name":"db_recovery_file_dest_size","value":"#{RECOVERYFILE_DEST_SIZE}","scope":"both","state":"present"}
  ]
 }]
 # End Oracle customizations
